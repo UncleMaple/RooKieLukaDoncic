@@ -1,4 +1,26 @@
 # CH2小结
+
+<!-- TOC -->
+
+- [CH2小结](#ch2小结)
+    - [路由管理](#路由管理)
+        - [示例](#示例)
+        - [MaterialPageRoute](#materialpageroute)
+        - [Navigator](#navigator)
+        - [命名路由](#命名路由)
+        - [路由钩子](#路由钩子)
+    - [包管理](#包管理)
+        - [包管理配置文件`pubspec.yml`](#包管理配置文件pubspecyml)
+        - [下载包](#下载包)
+        - [其他依赖方式](#其他依赖方式)
+    - [资源管理](#资源管理)
+    - [调试Flutter APP](#调试flutter-app)
+    - [Dart线程模型及异常捕获](#dart线程模型及异常捕获)
+        - [Dart单线程模型](#dart单线程模型)
+        - [Flutter异常捕获](#flutter异常捕获)
+
+<!-- /TOC -->
+
 ## 路由管理
 ### 示例
 ```dart

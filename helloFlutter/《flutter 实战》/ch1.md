@@ -1,4 +1,18 @@
 # CH1总结
+
+<!-- TOC -->
+
+- [CH1总结](#ch1总结)
+    - [升级Flutter SDK和依赖包](#升级flutter-sdk和依赖包)
+    - [连接ios模拟器](#连接ios模拟器)
+    - [ios配置Xcode签名](#ios配置xcode签名)
+    - [Dart](#dart)
+        - [const vs final vs static](#const-vs-final-vs-static)
+        - [async/await](#asyncawait)
+        - [Stream](#stream)
+
+<!-- /TOC -->
+
 ## 升级Flutter SDK和依赖包
 1. `flutter upgrade` 升级sdk
 1. `flutter packages get` 获取项目所有依赖包
