@@ -3,8 +3,8 @@
 <!-- TOC -->
 
 - [json序列化 小结](#json序列化-小结)
-    - [官方荐用json_serializable插件](#官方荐用json_serializable插件)
-    - [项目使用了built_value](#项目使用了built_value)
+  - [官方荐用json_serializable插件](#官方荐用json_serializable插件)
+  - [项目使用了built_value](#项目使用了built_value)
 
 <!-- /TOC -->
 <br>
@@ -25,7 +25,42 @@
     1. [flutter - built_value自动生成模型](https://juejin.im/post/6844904101977800717)
     1. [Dart 处理json，built_value库](https://www.cnblogs.com/ajanuw/p/10484605.html)
 
-* 自己在android studio中新建了一个live template, 输入`built_v`即可快速生成model模版
+* 自己在android studio中新建了一个live template, 输入`built_value`即可快速生成model class模版:
+    ```dart
+    // 模版内容
+    // 配置在 perference -> Editor -> Live Templates -> flutter 新建命名为 built_value
+    // Template Text 填入以下代码
+    // edit variables -> CLASS_NAME_CAMELCASE对应expression为 camelCase(CLASS_NAME)
+    abstract class $CLASS_NAME$ implements Built<$CLASS_NAME$, $CLASS_NAME$Builder> {
+    static Serializer<$CLASS_NAME$> get serializer => _$$$CLASS_NAME_CAMELCASS$Serializer;
+
+    String toJson() {
+        return json.encode(serializers.serializeWith($CLASS_NAME$.serializer, this));
+    }
+
+    factory $CLASS_NAME$.fromJson(String jsonString) {
+        return serializers.deserializeWith(
+        $CLASS_NAME$.serializer,
+        json.decode(jsonString),
+        );
+    }
+
+    Map<String, dynamic> toMap() {
+        return serializers.serializeWith($CLASS_NAME$.serializer, this);
+    }
+
+    factory $CLASS_NAME$.fromMap(Map<String, dynamic> map) {
+        return serializers.deserializeWith(
+        $CLASS_NAME$.serializer,
+        map,
+        );
+    }
+
+    $CLASS_NAME$._();
+    factory $CLASS_NAME$([void Function($CLASS_NAME$Builder) updates]) = _$$$CLASS_NAME$;
+    }
+    ```
+
 
 * 备注:
     ```dart

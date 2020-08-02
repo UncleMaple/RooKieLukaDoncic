@@ -1,4 +1,4 @@
-# I'm a rookie..
+# rookie on the way
 
     We ourselves feel that what we are doing is just a drop in the ocean. But the ocean would be less because of that missing drop.
 
