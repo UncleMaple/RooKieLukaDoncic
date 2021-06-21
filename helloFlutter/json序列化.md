@@ -3,8 +3,8 @@
 <!-- TOC -->
 
 - [json序列化 小结](#json序列化-小结)
-  - [官方荐用json_serializable插件](#官方荐用json_serializable插件)
-  - [项目使用了built_value](#项目使用了built_value)
+    - [官方荐用json_serializable插件](#官方荐用json_serializable插件)
+    - [项目使用了built_value](#项目使用了built_value)
 
 <!-- /TOC -->
 <br>
@@ -76,5 +76,5 @@
     flutter packages pub run build_runner watch  // 文件更改自动build
     
     flutter packages pub run build_runner watch --delete-conflicting-outputs  // 删除旧文件在build
-    ```
     
+    ```
