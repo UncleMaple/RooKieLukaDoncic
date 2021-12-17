@@ -289,3 +289,5 @@ A Chef cookbook can contain multiple Chef recipes. You cannot run the Chef cookb
 ## 编译
 
 `/opt/gitlab/embedded/bin/bundle install --without development test mysql --jobs 7 --retry 5`
+
+`export ALTERNATIVE_SOURCES=true`
