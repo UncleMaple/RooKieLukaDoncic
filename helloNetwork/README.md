@@ -1,24 +1,4 @@
-# Basic
-
-## check if a port is open on a remote linux pc
-
-Nmap command is popular network security, auditing, and exploration command. Nmap stands for Network Mapper.
-
-It also has a way to check for open ports. To do so, it utilizes a novel approach to using IP packets. It can also be used to learn about the services the host is providing. Other vital aspects that it can detect include operating system version, packet firewalls/filters, and so on! It is a useful tool.
-
-Let’s see the nmap syntax below.
-
-`nmap [-options] [IP or Hostname] [-p] [PortNumber]`
-
-As you can see, its syntax matches that of the nc command. Let’s run it to get a better understanding.
-
-`nmap 192.168.0.1 -p 22`
-
-![screen-shot](./src/nmap-screen-shot.png)
-
-## Privoxy
-配置代理到终端需要用到：
-https://www.privoxy.org/user-manual/index.html
+# Hello Network
 
 ## Shadowsocks-libev
 
@@ -90,4 +70,93 @@ sudo bash -c "cat <<EOT > /etc/kcptun/client_conf.json
 }
 EOT"
 
+sudo bash -c "cat <<EOT > /etc/systemd/system/kcptun_client.service
+[Unit]
+Description=Kcptun client
+Requires=network.target
+After=network-online.target
+    
+[Service]
+Type=simple
+User=nobody
+RemainAfterExit=yes
+ExecStart=/usr/local/bin/kcptun_client -c /etc/kcptun/client_conf.json
+ExecReload=/usr/bin/kill -HUP $MAINPID
+RestartSec=1min
+Restart=on-failure
+    
+[Install]
+WantedBy=multi-user.target
+EOT"
+
+
+sudo systemctl enable kcptun_client
+
+sudo systemctl start kcptun_client
+
+# 查看状态
+sudo service kcptun_client status
 ```
+
+## Privoxy 配置代理到终端
+配置代理到终端需要用到：
+https://www.privoxy.org/user-manual/index.html
+
+### Ubuntu install privoxy
+```sh
+sudo apt install -y privoxy
+```
+
+### Config
+```sh
+sudo vim /etc/privoxy/config
+```
+
+add this to tail:
+```txt
+listen-address  127.0.0.1:1087
+listen-address  [::1]:1087
+
+forward         192.168.*.*/     .
+forward         10.*.*.*/        .
+forward         127.*.*.*/       .
+forward         [FE80::/64]      .
+forward         [::1]            .
+forward         [FD00::/8]       .
+forward-socks5 / 127.0.0.1:10801 .
+```
+
+```sh
+# 重启服务
+sudo service restart privoxy
+```
+
+## 终端里使用proxy
+
+```sh
+# 开启
+export http_proxy=http://127.0.0.1:1087;export https_proxy=http://127.0.0.1:1087;
+
+# 关闭
+unset http_proxy && unset https_proxy
+```
+
+## Ubuntu 图形界面使用proxy
+![use-proxy](./src/ubuntu-use-proxy.png)
+
+
+## 检查端口是否开放 (Check if a port is open)
+
+Nmap command is popular network security, auditing, and exploration command. Nmap stands for Network Mapper.
+
+It also has a way to check for open ports. To do so, it utilizes a novel approach to using IP packets. It can also be used to learn about the services the host is providing. Other vital aspects that it can detect include operating system version, packet firewalls/filters, and so on! It is a useful tool.
+
+Let’s see the nmap syntax below.
+
+`nmap [-options] [IP or Hostname] [-p] [PortNumber]`
+
+As you can see, its syntax matches that of the nc command. Let’s run it to get a better understanding.
+
+`nmap 192.168.0.1 -p 22`
+
+![screen-shot](./src/nmap-screen-shot.png)
