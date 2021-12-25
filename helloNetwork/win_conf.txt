@@ -1,0 +1,2 @@
+ C:\Users\drewlee\Downloads\udp2raw_mp_binaries> 
+ ./udp2raw_mp.exe -c -l "0.0.0.0:29001"  -r "45.76.194.21:29001" -k "lhfdevpn" --raw-mode easy-faketcp
