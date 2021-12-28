@@ -38,7 +38,10 @@ excerpt: "Error response from daemon: Get https://registry-1.docker.io/v2/: prox
 #### 解决方案：
 ##### 1. `sudo systemctl status docker` 
 查看docker service 配置文件地址
-![docker-service-status](/assets/images/docker-service-status.png)
+
+<figure>
+  <img src="{{ '/assets/images/docker-service-status.png' | relative_url }}" alt="docker-service-status">
+</figure>
 
 ##### 2. `sudo vim /lib/systemd/system/docker.service`
 在`[Service]`下添加: 

@@ -19,7 +19,9 @@ https://gitlab.com/gitlab-org/omnibus-gitlab.git
 
 ### Omnibus GitLab 结构和组成
 
-![Omnibus-GitLab Components](/assets/images/components.png)
+<figure>
+  <img src="{{ '/assets/images/components.png' | relative_url }}" alt="Omnibus-GitLab Components">
+</figure>
 
 ### 配置从哪拉取gitlab的代码 及其他组件
 

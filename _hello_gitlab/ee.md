@@ -25,7 +25,9 @@ ee/app/workers/foo_worker.rb
 ee/app/views/foo.html.haml
 ee/app/views/foo/_bar.html.haml
 ```
-![ee-module-pic](/assets/images/ee-module.png)
+<figure>
+  <img src="{{ '/assets/images/ee-module.png' | relative_url }}" alt="ee-module-pic">
+</figure>
 
 对应的`controller`、`model`、`view`代码都可以复写
 
@@ -35,4 +37,6 @@ _Q：Geo模块的作用?_
 
 这种方式能起作用是因为它在ce版本的`eager-load/auto-load`路径中有配置，可以在[config/application.rb.](https://gitlab.com/gitlab-org/gitlab/-/blob/925d3d4ebc7a2c72964ce97623ae41b8af12538d/config/application.rb#L42-52)
 
-![eager-load.png](/assets/images/eager-load.png)
+<figure>
+  <img src="{{ '/assets/images/eager-load.png' | relative_url }}" alt="eager-load">
+</figure>

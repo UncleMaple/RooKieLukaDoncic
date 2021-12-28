@@ -147,7 +147,7 @@ unset http_proxy && unset https_proxy
 ```
 
 ## Ubuntu 图形界面使用proxy
-![use-proxy](/assets/images/ubuntu-use-proxy.png)
+![use-proxy]({{ "/assets/images/ubuntu-use-proxy.png" | relative_url }})
 
 
 ## 检查端口是否开放 (Check if a port is open)
@@ -164,4 +164,4 @@ As you can see, its syntax matches that of the nc command. Let’s run it to get
 
 `nmap 192.168.0.1 -p 22`
 
-![screen-shot](/assets/images/nmap-screen-shot.png)
+![screen-shot]({{ "/assets/images/nmap-screen-shot.png" | relative_url }})

@@ -17,8 +17,9 @@ cd gop
 
 安装完之后：
 
-![after_install](/assets/images/install_go_plus.png)
-
+<figure>
+  <img src="{{ '/assets/images/install_go_plus.png' | relative_url }}" alt="after_install">
+</figure>
 
 ### 运行hello world程序
 
@@ -31,7 +32,7 @@ func main() {
 }
 ```
 
-![hello_world](https://img-community.csdnimg.cn/images/5efdcda730a548b1a98ae1ff84a698cf.png "#left")
+![hello_world]({{ "https://img-community.csdnimg.cn/images/5efdcda730a548b1a98ae1ff84a698cf.png" | relative_url }})
 
 **ATTENTION⚠️**  解决(非代码问题)运行不成功
 
@@ -39,7 +40,7 @@ func main() {
 
 检查`tmp`目录下存在`go.mod`文件，删除该文件再运行，成功解决✅
 
-![run_error](https://img-community.csdnimg.cn/images/6518e24f05fd45f4bbd1c52a53b0d773.png "#left")
+![run_error]({{ "https://img-community.csdnimg.cn/images/6518e24f05fd45f4bbd1c52a53b0d773.png" | relative_url }})
 
 
 ### 变量
@@ -57,7 +58,7 @@ func main() {
 }
 ```
 
-![variables](https://img-community.csdnimg.cn/images/a4504ad8d9c74bfa99de0a545aa0fd4e.png "#left")
+![variables]({{ "https://img-community.csdnimg.cn/images/a4504ad8d9c74bfa99de0a545aa0fd4e.png" | relative_url }})
 
 如果用go语言实现以上逻辑：
 ```go
@@ -79,7 +80,7 @@ func main() {
 
 大家应该都会玩“锤子剪刀布”的游戏：两人同时给出手势，胜负规则如图所示：
 
-![猜拳图片](/assets/images/caiquan.jpeg)
+![猜拳图片]({{ "/assets/images/caiquan.jpeg" | relative_url }})
 
 现给出两人的交锋记录，请统计双方的胜、平、负次数，并且给出双方分别出什么手势的胜算最大。
 
