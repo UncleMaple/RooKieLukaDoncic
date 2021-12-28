@@ -27,7 +27,7 @@ github_username:  skipmaple
 
 # if can not work, check this repo: https://github.com/benbalter/jekyll-remote-theme#usage
 #remote_theme: mmistakes/minimal-mistakes
-remote_theme: skipmaple/RookieLuka
+#remote_theme: skipmaple/RookieLuka
 
 # Exclude from processing.
 # The following items will not be processed, by default.
