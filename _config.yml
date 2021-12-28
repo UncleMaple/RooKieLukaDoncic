@@ -23,9 +23,11 @@ twitter_username: skipmaple
 github_username:  skipmaple
 
 # Build settings
-theme: minimal-mistakes-jekyll
+#theme: minimal-mistakes-jekyll
+
 # if can not work, check this repo: https://github.com/benbalter/jekyll-remote-theme#usage
 #remote_theme: mmistakes/minimal-mistakes
+remote_theme: skipmaple/RookieLuka
 
 # Exclude from processing.
 # The following items will not be processed, by default.
