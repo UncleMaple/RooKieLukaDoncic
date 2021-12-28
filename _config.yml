@@ -67,17 +67,18 @@ page_excerpts: true
 minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise", "default"
 
 # Site Settings
+# locale                   : "zh-CN"
 locale                   : "en-US"
-title                    : "DLee7Even"
+title                    : "DrewLee's Blog"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "DrewLee"
 description              : "You may be disappointed if you fail, but you are doomed if you don't try."
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+repository               : "skipmaple/RookieLuka" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
+logo                     : "/assets/images/avatar.png" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
@@ -156,13 +157,13 @@ analytics:
 author:
   name             : "Drew Lee"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
+  bio              : "A developer who is willing to fall and stand up again and again."
   location         : "Earth"
   email            :
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      # url: "mailto:your.name@email.com"
+      url: "mailto:skipmaple@gmail.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
@@ -174,7 +175,7 @@ author:
       # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url: "https://github.com/"
+      url: "https://github.com/skipmaple/"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
@@ -190,7 +191,7 @@ footer:
       # url:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url:
+      url: "https://github.com/skipmaple/"
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
       # url:
@@ -282,6 +283,7 @@ plugins:
   - jekyll-include-cache
   - jekyll-seo-tag
   - jekyll-remote-theme
+  - jekyll-archives
 
 # mimic GitHub Pages with --safe
 whitelist:
@@ -309,16 +311,16 @@ tag_archive:
   type: liquid
   path: /tags/
 # https://github.com/jekyll/jekyll-archives
-# jekyll-archives:
-#   enabled:
-#     - categories
-#     - tags
-#   layouts:
-#     category: archive-taxonomy
-#     tag: archive-taxonomy
-#   permalinks:
-#     category: /categories/:name/
-#     tag: /tags/:name/
+jekyll-archives:
+  enabled:
+    - categories
+    - tags
+  layouts:
+    category: archive-taxonomy
+    tag: archive-taxonomy
+  permalinks:
+    category: /categories/:name/
+    tag: /tags/:name/
 
 
 # HTML Compression
@@ -328,7 +330,29 @@ compress_html:
   ignore:
     envs: development
 
-
+# Collections
+collections:
+  hello_docker:
+    output: true
+    permalink: /:collection/:path/
+  hello_flutter:
+    output: true
+    permalink: /:collection/:path/
+  hello_gitlab:
+    output: true
+    permalink: /:collection/:path/
+  hello_go_plus:
+    output: true
+    permalink: /:collection/:path/
+  hello_kubernetes:
+    output: true
+    permalink: /:collection/:path/
+  hello_network:
+    output: true
+    permalink: /:collection/:path/
+  hello_shell:
+    output: true
+    permalink: /:collection/:path/
 # Defaults
 defaults:
   # _posts
@@ -342,3 +366,73 @@ defaults:
       comments: # true
       share: true
       related: true
+  # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+  # _hello_docker
+  - scope:
+      path: ""
+      type: hello_docker
+    values:
+      layout: single
+      author_profile: false
+      share: true
+  # _hello_flutter
+  - scope:
+      path: ""
+      type: hello_flutter
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      comment: true
+  # _hello_gitlab
+  - scope:
+      path: ""
+      type: hello_gitlab
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      comment: true
+  # _hello_go_plus
+  - scope:
+      path: ""
+      type: hello_go_plus
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      comment: true
+  # _hello_kubernetes
+  - scope:
+      path: ""
+      type: hello_kubernetes
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      comment: true
+  # _hello_network
+  - scope:
+      path: ""
+      type: hello_network
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      comment: true
+  # _hello_shell
+  - scope:
+      path: ""
+      type: hello_shell
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      comment: true
+      read_time: true
