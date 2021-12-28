@@ -51,7 +51,7 @@ Environment="HTTPS_PROXY=http.docker.internal:3128"
 Environment="HTTP_PROXY=http.docker.internal:3128"
 ```
 
-![add-proxy-env](/assets/images/add-proxy-env.png)
+![add-proxy-env]({{ "/assets/images/add-proxy-env.png" | relative_url }})
 
 ###### 3. `sudo systemctl daemon-reload`
    

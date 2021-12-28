@@ -17,9 +17,7 @@ cd gop
 
 安装完之后：
 
-<figure>
-  <img src="{{ '/assets/images/install_go_plus.png' | relative_url }}" alt="after_install">
-</figure>
+![after_install]({{"/assets/images/install_go_plus.png" | relative_url }})
 
 ### 运行hello world程序
 
@@ -32,7 +30,7 @@ func main() {
 }
 ```
 
-![hello_world]({{ "https://img-community.csdnimg.cn/images/5efdcda730a548b1a98ae1ff84a698cf.png" | relative_url }})
+![hello_world]({{ "https://img-community.csdnimg.cn/images/5efdcda730a548b1a98ae1ff84a698cf.png" }})
 
 **ATTENTION⚠️**  解决(非代码问题)运行不成功
 
@@ -40,7 +38,7 @@ func main() {
 
 检查`tmp`目录下存在`go.mod`文件，删除该文件再运行，成功解决✅
 
-![run_error]({{ "https://img-community.csdnimg.cn/images/6518e24f05fd45f4bbd1c52a53b0d773.png" | relative_url }})
+![run_error]({{ "https://img-community.csdnimg.cn/images/6518e24f05fd45f4bbd1c52a53b0d773.png" }})
 
 
 ### 变量
@@ -58,7 +56,7 @@ func main() {
 }
 ```
 
-![variables]({{ "https://img-community.csdnimg.cn/images/a4504ad8d9c74bfa99de0a545aa0fd4e.png" | relative_url }})
+![variables]({{ "https://img-community.csdnimg.cn/images/a4504ad8d9c74bfa99de0a545aa0fd4e.png" }})
 
 如果用go语言实现以上逻辑：
 ```go
