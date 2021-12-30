@@ -1,6 +1,6 @@
 ---
 title: "Gitlab Install Troubleshooting"
-excerpt: "Gitlab 安装过程中遇到的问题及解决方案."
+excerpt: "Gitlab 开发环境安装过程中遇到的问题及解决方案."
 ---
 
 <!-- # Install Troubleshooting -->
