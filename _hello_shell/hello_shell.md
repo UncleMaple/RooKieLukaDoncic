@@ -26,7 +26,7 @@ echo $SHELL
 
 ### Install OhMyZsh
 
-仓库地址 => https://github.com/ohmyzsh/ohmyzsh
+仓库地址 => [**https://github.com/ohmyzsh/ohmyzsh**](https://github.com/ohmyzsh/ohmyzsh)
 
 ```sh
 # Use curl
@@ -56,21 +56,21 @@ autoload -U compinit && compinit -u
 ```
 
 #### Install zsh-syntax-highlighting
-https://github.com/zsh-users/zsh-syntax-highlighting
+仓库地址 => [**https://github.com/zsh-users/zsh-syntax-highlighting**](https://github.com/zsh-users/zsh-syntax-highlighting)
 
 ```sh
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 ```
 
 #### Install zsh-autosuggestions
-https://github.com/zsh-users/zsh-autosuggestions
+仓库地址 => [**https://github.com/zsh-users/zsh-autosuggestions**](https://github.com/zsh-users/zsh-autosuggestions)
 
 ```sh
 git clone git://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
 ```
 
 #### Install autojump
-https://github.com/wting/autojump
+仓库地址 => [**https://github.com/wting/autojump**](https://github.com/wting/autojump)
 
 ```sh
 # macos
@@ -85,9 +85,14 @@ cd autojump
 cd .. && sudo rm -rf autojump
 ```
 
+#### Enable config
+
+```sh
+source ~/.zshrc
+```
 ### Config powerlevel10k Theme
 
-https://github.com/romkatv/powerlevel10k
+仓库地址 => [**https://github.com/romkatv/powerlevel10k**](https://github.com/romkatv/powerlevel10k)
 
 1. Clone the repository:
     ```zsh
@@ -101,7 +106,7 @@ https://github.com/romkatv/powerlevel10k
     ```
 2. Set `ZSH_THEME="powerlevel10k/powerlevel10k"` in `~/.zshrc`.
 
-## Dockerized playground.
+## Dockerized playground
 
 If you have Docker installed then you can use the below snippet to try this setup in a sandbox without installing anything or affecting your existing setup.
 
