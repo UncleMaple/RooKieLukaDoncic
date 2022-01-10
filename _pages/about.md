@@ -2,6 +2,8 @@
 layout: single
 title: About
 permalink: /about/
+show_date: false
+read_time: false
 ---
 
 ## Why do you blog?

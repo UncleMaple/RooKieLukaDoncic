@@ -5,6 +5,7 @@
 layout: splash
 permalink: /
 hidden: true
+read_time: false
 header:
   overlay_color: "#5e616c"
   overlay_image: /assets/images/mm-home-page-feature.jpg
