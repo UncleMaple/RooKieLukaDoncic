@@ -23,10 +23,10 @@ twitter_username: skipmaple
 github_username:  skipmaple
 
 # Build settings
-# theme: minimal-mistakes-jekyll
+theme: minimal-mistakes-jekyll
 
 # if can not work, check this repo: https://github.com/benbalter/jekyll-remote-theme#usage
-remote_theme: mmistakes/minimal-mistakes
+#remote_theme: mmistakes/minimal-mistakes
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -70,7 +70,7 @@ minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "
 # Site Settings
 # locale                   : "zh-CN"
 locale                   : "en-US"
-title                    : "DrewLee's Blog"
+title                    : "OneTail Blog"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "DrewLee"
@@ -79,7 +79,7 @@ url                      : "https://skipmaple.github.io" # the base hostname & p
 baseurl                  : "/RookieLuka" # the subpath of your site, e.g. "/blog"
 repository               : "skipmaple/RookieLuka" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : "https://source.unsplash.com/random/500×300" # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : "/assets/images/avatar.png" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
+logo                     : "/assets/images/logo_welford.png" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 100
@@ -160,8 +160,9 @@ analytics:
 # Site Author
 author:
   name             : "Drew Lee"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "A developer who is willing to fall and stand up again and again."
+  avatar           : "/assets/images/avatar.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  # bio              : "A developer who is willing to fall and stand up again and again."
+  bio              : "我们觉得我们所做的只是大海中的一滴水，但是没有了这滴水，海水会变少。"
   location         : "Earth"
   email            :
   links:
