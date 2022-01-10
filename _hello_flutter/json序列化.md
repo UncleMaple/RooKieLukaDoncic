@@ -1,5 +1,5 @@
 ---
-title: "json序列化 小结"
+title: "Json序列化"
 excerpt: "官方荐用json_serializable插件,项目使用了built_value."
 ---
 
