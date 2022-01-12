@@ -133,7 +133,7 @@ forward-socks5 / 127.0.0.1:10801 .
 
 ```sh
 # 重启服务
-sudo service restart privoxy
+sudo systemctl restart privoxy
 ```
 
 ## 终端里使用proxy
