@@ -293,6 +293,14 @@ cd ~/omnibus-gitlab
 ```
 Then reference: https://docs.gitlab.com/omnibus/build/build_package.html
 
+## Maintain
+
+**Start rails console**
+
+https://docs.gitlab.com/ee/administration/operations/rails_console.html#starting-a-rails-console-session
+```shell
+gitlab-rails console
+```
 ## Question Mark: 什么是Chef？
 
 **Q**:   What is the difference between a cookbook and a recipe in Chef (DevOps)?
