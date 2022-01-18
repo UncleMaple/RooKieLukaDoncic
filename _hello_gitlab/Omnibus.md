@@ -284,6 +284,14 @@ The recipes to be run are defined in a file called `dna.json` present in the emb
     A Chef cookbook can contain multiple Chef recipes. 
 拿GitLab CE来讲，`gitlab`的cookbook 将会被选为主菜谱，这将会创建所有必要的食谱，包括runit。简短说，reconfigure 是一个基础的chef-client，它通过加载配置模版运行了不同的配置文件和服务。
 
+## Execution
+```sh
+docker pull registry.gitlab.com/gitlab-org/gitlab-omnibus-builder/ubuntu_20.04:2.9.1
+
+git clone git@github.com:GitChinaLab/OmnibusGitlab.git ~/omnibus-gitlab
+cd ~/omnibus-gitlab
+```
+Then reference: https://docs.gitlab.com/omnibus/build/build_package.html
 
 ## Question Mark: 什么是Chef？
 
