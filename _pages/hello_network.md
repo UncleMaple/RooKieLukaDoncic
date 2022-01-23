@@ -2,7 +2,7 @@
 title: HelloNetwork
 layout: collection
 permalink: /hello_network/
-collection: hello_network
+collection: Hello Network
 entries_layout: grid
 classes: wide
 ---

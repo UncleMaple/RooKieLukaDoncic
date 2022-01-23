@@ -346,7 +346,7 @@ collections:
   hello_gitlab:
     output: true
     permalink: /:collection/:path/
-  hello_go_plus:
+  hello_go:
     output: true
     permalink: /:collection/:path/
   hello_kubernetes:
@@ -418,10 +418,10 @@ defaults:
       show_date: true
       read_time: true
       toc: true
-  # _hello_go_plus
+  # _hello_go
   - scope:
       path: ""
-      type: hello_go_plus
+      type: hello_go
     values:
       layout: single
       author_profile: true

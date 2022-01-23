@@ -1,4 +1,7 @@
-# CH1总结
+---
+title: "《flutter实战》CH1总结"
+excerpt: ""
+---
 
 <!-- TOC -->
 

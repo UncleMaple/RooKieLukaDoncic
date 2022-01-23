@@ -1,6 +1,6 @@
 ---
 title: "Run Docker commands without sudo"
-excerpt: ""
+excerpt: "解决安装完docker后，无法用非root用户运行docker命令"
 ---
 
 
