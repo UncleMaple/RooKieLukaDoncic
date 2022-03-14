@@ -1,8 +1,8 @@
 ---
 title: HelloGoPlus
 layout: collection
-permalink: /hello_go_plus/
-collection: hello_go_plus
+permalink: /hello_go/
+collection: Hello Go
 entries_layout: grid
 classes: wide
 ---

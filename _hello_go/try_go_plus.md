@@ -1,5 +1,5 @@
 ---
-title: "Go plus 浅尝一下"
+title: "Go plus 安装运行"
 excerpt: "GoPlus - The Go+ language for engineering, STEM education, and data science."
 ---
 

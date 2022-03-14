@@ -68,8 +68,8 @@ page_excerpts: true
 minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise", "default"
 
 # Site Settings
-# locale                   : "zh-CN"
-locale                   : "en-US"
+# locale                   : "en-US"
+locale                   : "zh-CN"
 title                    : "OneTail Blog"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
@@ -87,9 +87,9 @@ words_per_minute         : 100
 date_format: "%Y-%m-%d"
 
 comments:
-  provider               : # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
+  provider               : "disqus" # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
   disqus:
-    shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
+    shortname            : skipmaple # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
   discourse:
     server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
   facebook:
@@ -315,17 +315,17 @@ category_archive:
 tag_archive:
   type: liquid
   path: /tags/
-# https://github.com/jekyll/jekyll-archives
-jekyll-archives:
-  enabled:
-    - categories
-    - tags
-  layouts:
-    category: archive-taxonomy
-    tag: archive-taxonomy
-  permalinks:
-    category: /categories/:name/
-    tag: /tags/:name/
+## https://github.com/jekyll/jekyll-archives
+#jekyll-archives:
+#  enabled:
+#    - categories
+#    - tags
+#  layouts:
+#    category: archive-taxonomy
+#    tag: archive-taxonomy
+#  permalinks:
+#    category: /categories/:name/
+#    tag: /tags/:name/
 
 
 # HTML Compression
@@ -346,7 +346,7 @@ collections:
   hello_gitlab:
     output: true
     permalink: /:collection/:path/
-  hello_go_plus:
+  hello_go:
     output: true
     permalink: /:collection/:path/
   hello_kubernetes:
@@ -368,7 +368,7 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      comments: # true
+      comments: true
       share: true
       related: true
       show_date: true
@@ -394,6 +394,7 @@ defaults:
       show_date: true
       read_time: true
       toc: true
+      comments: true
   # _hello_flutter
   - scope:
       path: ""
@@ -406,6 +407,7 @@ defaults:
       show_date: true
       read_time: true
       toc: true
+      comments: true
   # _hello_gitlab
   - scope:
       path: ""
@@ -418,10 +420,11 @@ defaults:
       show_date: true
       read_time: true
       toc: true
-  # _hello_go_plus
+      comments: true
+  # _hello_go
   - scope:
       path: ""
-      type: hello_go_plus
+      type: hello_go
     values:
       layout: single
       author_profile: true
@@ -430,6 +433,7 @@ defaults:
       show_date: true
       read_time: true
       toc: true
+      comments: true
   # _hello_kubernetes
   - scope:
       path: ""
@@ -442,6 +446,8 @@ defaults:
       show_date: true
       read_time: true
       toc: true
+      comments: true
+
   # _hello_network
   - scope:
       path: ""
@@ -454,6 +460,7 @@ defaults:
       show_date: true
       read_time: true
       toc: true
+      comments: true
   # _hello_shell
   - scope:
       path: ""
@@ -466,3 +473,4 @@ defaults:
       read_time: true
       show_date: true
       toc: true
+      comments: true

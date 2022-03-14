@@ -1,4 +1,7 @@
-# dart三个点(...)操作符用法
+---
+title: "Dart三个点(...)操作符用法"
+excerpt: ""
+---
 
 考虑下面一种情况,现在有三个Text Widgets List:
 ```dart
