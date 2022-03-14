@@ -3,6 +3,7 @@ layout: single
 title:  "Blog Ideas"
 date:   2022-01-11 04:20:00 +0800
 categories: idea
+toc: false
 ---
 
 - Let  minimistake to be a custom gem (seperate to project).
