@@ -119,6 +119,12 @@ vim /home/git/gitaly/config.toml
 sudo service gitlab restart
 ```
 
+#### 临时域名 客户端访问配置
+终端里加一下
+```sh
+sudo sh -c  'echo "192.168.72.106 t2-gitcode.csdn.net" >> /etc/hosts'
+```
+
 ## 健康检查
 
 ```sh
