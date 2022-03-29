@@ -1,6 +1,7 @@
 ---
 title: "Gitlab Install Troubleshooting"
 excerpt: "Gitlab 开发环境安装过程中遇到的问题及解决方案."
+date: 2021-12-30 15:30:00 +0800
 ---
 
 <!-- # Install Troubleshooting -->

@@ -2,6 +2,7 @@
 title: "部署Gitlab到生产环境"
 excerpt: "Gitlab文档docker启动，源码部署，备份机器，还原机器的解决方案."
 toc: true
+date: 2021-12-30 15:30:00 +0800
 ---
 
 <!-- # 部署Gitlab到生产环境 -->

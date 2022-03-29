@@ -1,6 +1,7 @@
 ---
 title: "《flutter实战》CH1总结"
 excerpt: ""
+date: 2021-12-30 15:30:00 +0800
 ---
 
 <!-- TOC -->

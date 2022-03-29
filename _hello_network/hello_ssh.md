@@ -1,6 +1,7 @@
 ---
 title: "HELLO SSH"
 excerpt: "ssh笔记"
+date: 2021-12-30 15:30:00 +0800
 ---
 
 ## SSH To Server Without Password
@@ -21,10 +22,11 @@ vim ~/.ssh/config
     user to root
     port to 22
 )
+
 Add lines:
 
 
-```txt
+```shell
 Host ubuntu_server
      HostName 192.168.1.112
      User root
