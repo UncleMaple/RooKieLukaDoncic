@@ -2,6 +2,7 @@
 title: "解决docker拉取image错误： ImagePullBackOff"
 excerpt: "解决修改proxy后无法拉取image, Error response from daemon: Get https://registry-1.docker.io/v2/: proxyconnect 
   tcp: dial tcp 127.0.0.1:1087: connect: connection refused."
+date: 2021-12-30 15:30:00 +0800
 # header:
 #   # image: /assets/images/docker_header_bg.jpg
 #   # teaser: /assets/images/foo-bar-identity-th.jpg

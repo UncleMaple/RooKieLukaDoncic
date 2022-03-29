@@ -1,6 +1,7 @@
 ---
 title: "Json序列化"
 excerpt: "官方荐用json_serializable插件,项目使用了built_value."
+date: 2021-12-30 15:30:00 +0800
 ---
 
 <br>

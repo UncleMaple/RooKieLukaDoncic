@@ -1,6 +1,7 @@
 ---
 title: "Dart三个点(...)操作符用法"
 excerpt: ""
+date: 2021-12-30 15:30:00 +0800
 ---
 
 考虑下面一种情况,现在有三个Text Widgets List:

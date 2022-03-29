@@ -1,6 +1,7 @@
 ---
 title: "HELLO SHELL"
 excerpt: "终端配置笔记(oh-my-zsh、plugin、theme)"
+date: 2021-12-30 15:30:00 +0800
 ---
 
 <!-- # Hello Shell -->

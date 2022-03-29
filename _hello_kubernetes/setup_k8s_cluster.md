@@ -1,6 +1,7 @@
 ---
 title: "Install Kubernetes Cluster On Ubuntu"
 excerpt: "在ubuntu机器上搭建k8s集群."
+date: 2021-12-30 15:30:00 +0800
 ---
 
 # Install Kubernetes Cluster using kubeadm

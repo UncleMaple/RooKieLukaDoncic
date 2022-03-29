@@ -1,6 +1,7 @@
 ---
 title: "HELLO KcpTun"
 excerpt: "ubuntu 配置kcp服务(包括服务端和客户端)开机自启"
+date: 2021-12-30 15:30:00 +0800
 ---
 
 ubuntu 配置kcp服务

@@ -1,6 +1,7 @@
 ---
 title: "Gitlab EE Module Prepend Flow"
 excerpt: "Gitlab EE 模块加载机制的技术调研."
+date: 2021-12-30 15:30:00 +0800
 ---
 
 <!-- # Gitlab EE Module Prepend Flow -->

@@ -1,6 +1,7 @@
 ---
 title: "Go plus 安装运行"
 excerpt: "GoPlus - The Go+ language for engineering, STEM education, and data science."
+date: 2021-12-30 15:30:00 +0800
 ---
 
 项目地址: https://github.com/goplus/gop.git

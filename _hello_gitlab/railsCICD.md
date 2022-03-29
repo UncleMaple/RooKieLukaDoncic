@@ -1,5 +1,6 @@
 ---
 title: "GitLab CI/CD笔记"
+date: 2021-12-30 15:30:00 +0800
 # excerpt: ""
 ---
 
