@@ -67,7 +67,7 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 仓库地址 => [**https://github.com/zsh-users/zsh-autosuggestions**](https://github.com/zsh-users/zsh-autosuggestions)
 
 ```sh
-git clone git://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
 ```
 
 #### Install autojump
@@ -78,7 +78,7 @@ git clone git://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh
 brew install autojump
 
 # Ubuntu,Debian
-git clone git://github.com/wting/autojump.git
+git clone https://github.com/wting/autojump.git
 cd autojump
 
 ./install.py
